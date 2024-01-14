@@ -13,3 +13,7 @@ or manually on Linux, follow this steps:
     $ flex calc.l
     $ gcc calc.tab.c lex.yy.c -o calc -lm
     $ ./calc
+
+or
+
+    $ echo "3*5" | ./calc

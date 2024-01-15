@@ -22,7 +22,5 @@
 "/"		{return T_DIVIDE;}
 "("		{return T_LEFT;}
 ")"		{return T_RIGHT;}
-"exit"		{return T_QUIT;}
-"quit"		{return T_QUIT;}
 
 %%

@@ -2,7 +2,7 @@
 typedef struct Node Node;
 
 struct Node {
-	int OpCode;
+	char* OpCode;
 	int ival;
 	float fval;
 

@@ -44,7 +44,7 @@ calculation: line { $$ = $1; root=$$; SHOW($$); }
 	   | calculation line { $$ = malloc(sizeof(Node)); root=$$; $$->OpCode="list(line)"; $$->left=$1; $$->right=$2; SHOW($$); }
 ;
 
-line: eol
+line: eol	{ $$ = NULL; }
     | expression eol
 ;
 

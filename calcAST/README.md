@@ -6,15 +6,15 @@ Ths time it produces a syntax tree.
 
 Compile using the `Makefile` 
 
-    $ make
+    make
 
 or manually on Linux, follow this steps:
 
-    $ bison -d calc.y
-    $ flex calc.l
-    $ gcc calc.tab.c lex.yy.c -o calc -lm
+    bison -d calc.y
+    flex calc.l
+    gcc calc.tab.c lex.yy.c -o calc -lm
 
 usage
 
-    $ printf "3+4.5" | ./calc
-    $ printf "3+4.5\n2*13\n30/((4+0.5)-(1+6))\n78" | ./calc
+    printf "3+4.5" | ./calc
+    printf "3+4.5\n2*13\n30/((4+0.5)-(1+6))\n78" | ./calc
